@@ -1,6 +1,6 @@
 # @flyweel/skill
 
-Install [Flyweel](https://flyweel.co) skills for Claude Code.
+Install [Flyweel](https://flyweel.co) ad analysis skills for any AI coding agent — Claude Code, Cursor, Windsurf, Gemini CLI, Codex, OpenCode, and more. One command to install, update, or remove. Auto-detects your agents.
 
 ## Quick Start
 
@@ -8,24 +8,31 @@ Install [Flyweel](https://flyweel.co) skills for Claude Code.
 npx @flyweel/skill install flyweel-mcp-deep-ad-analysis
 ```
 
-No setup required. Skills are cloned to `~/.claude/skills/` and available in your next Claude Code session.
+Auto-detects which agents you have installed and configures each one.
 
 ## Commands
 
 ```bash
-# List available skills
+# List available skills and supported agents
 npx @flyweel/skill
 
-# Install a skill
+# Install a skill (auto-detects your agents)
 npx @flyweel/skill install <skill-name>
+
+# Install for a specific agent
+npx @flyweel/skill install <skill-name> --agent=cursor
+npx @flyweel/skill install <skill-name> --agent=claude-code,gemini
+
+# Install for all supported agents
+npx @flyweel/skill install <skill-name> --agent=all
 
 # Install all Flyweel skills
 npx @flyweel/skill install --all
 
-# Update an installed skill
-npx @flyweel/skill install <skill-name>  # re-running pulls latest
+# Update (re-run install)
+npx @flyweel/skill install <skill-name>
 
-# Remove a skill
+# Remove a skill from all agents
 npx @flyweel/skill remove <skill-name>
 ```
 
@@ -35,6 +42,17 @@ npx @flyweel/skill remove <skill-name>
 |---|---|
 | `flyweel-mcp-deep-ad-analysis` | Analyse Google Ads and Meta Ads with the Flyweel MCP server |
 | `ad-performance-analyser-flyweel` | Analyse ad spend across Google, Meta, LinkedIn, and TikTok from any data source |
+
+## Supported Agents
+
+| Agent | How it installs |
+|---|---|
+| **Claude Code** | Clones to `~/.claude/skills/` |
+| **Cursor** | Copies as `.mdc` rule to `~/.cursor/rules/` |
+| **Windsurf** | Copies as `.md` rule to `~/.windsurf/rules/` |
+| **Codex CLI** | Appends to `~/.codex/instructions.md` |
+| **Gemini CLI** | Appends to `~/.gemini/GEMINI.md` |
+| **OpenCode** | Appends to `~/.opencode/instructions.md` |
 
 ## Built by Flyweel
 
