@@ -1,0 +1,25 @@
+{
+  "name": "@flyweel/skill",
+  "version": "1.0.0",
+  "description": "Install Flyweel skills for Claude Code",
+  "bin": {
+    "flyweel-skill": "./index.mjs"
+  },
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openairlabs/flyweel-skill-cli"
+  },
+  "keywords": [
+    "flyweel",
+    "claude",
+    "claude-code",
+    "skill",
+    "mcp",
+    "google-ads",
+    "meta-ads",
+    "ad-analysis"
+  ],
+  "author": "Flyweel <hello@flyweel.co> (https://flyweel.co)"
+}
