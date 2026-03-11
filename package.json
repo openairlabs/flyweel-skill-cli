@@ -1,15 +1,16 @@
 {
   "name": "@flyweel/skill",
-  "version": "1.0.0",
-  "description": "Install Flyweel skills for Claude Code",
+  "version": "1.0.5",
+  "description": "Install Flyweel ad analysis skills for any AI coding agent",
   "bin": {
-    "flyweel-skill": "./index.mjs"
+    "skill": "bin/flyweel-skill.js",
+    "flyweel-skill": "bin/flyweel-skill.js"
   },
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openairlabs/flyweel-skill-cli"
+    "url": "git+https://github.com/openairlabs/flyweel-skill-cli.git"
   },
   "keywords": [
     "flyweel",

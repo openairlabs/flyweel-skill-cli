@@ -62,11 +62,12 @@ const GREEN = "\x1b[32m";
 const RED = "\x1b[31m";
 const CYAN = "\x1b[36m";
 const YELLOW = "\x1b[33m";
+const MINT = "\x1b[38;2;170;233;213m";
 const RESET = "\x1b[0m";
 
 function banner() {
   console.log();
-  console.log(`${BOLD}  flyweel skill installer${RESET}`);
+  console.log(`${MINT}✻${RESET} ${BOLD}flyweel skill installer${RESET}`);
   console.log(`${DIM}  https://flyweel.co${RESET}`);
   console.log();
 }
